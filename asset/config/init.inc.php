@@ -15,10 +15,10 @@ $options = [
 //définition d'une constante nommée CONNECTBDD qui relie notre bdd
 define('CONNECTBDD',array(
     'type'=>'mysql',//type de la bdd
-    'host'=>'mysql-projet-gestion-images.alwaysdata.net',//hôte de la bdd
-    'user'=>'347675_img',//utilisateur
-    'pass'=>'#5sqapqwfTBykscs56yeJKQqKD?',//mdp vide sous windows
-    'database'=>'projet-gestion-images_mohamed'//nom de la bdd exploitée
+    'host'=>'',//hôte de la bdd
+    'user'=>'',//utilisateur
+    'pass'=>'',//mdp vide sous windows
+    'database'=>''//nom de la bdd exploitée
 ));
 
 //méthode du try and catch afin de tester le code et de détecter les potentielles erreurs
