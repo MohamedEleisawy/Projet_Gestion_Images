@@ -1,0 +1,103 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background:#10002B;
+}
+
+/*MOBILE FIRST*/
+/*css table*/
+table{
+    background:#180040;
+    margin: auto;
+    margin-top:50px;
+    padding-top: 20px;
+    border-collapse: collapse;
+    border: solid 1px #ff2cdf;
+    width:90vw;
+}
+td,th{
+    border: solid 1px #ff2cdf;
+    color:#ffffffd7; 
+    text-align:center;
+}
+
+/*css form*/
+fieldset{
+    border:1px solid #ff2cdf;
+    background:#180040;
+    opacity:90%;
+    width:65vw;
+    height:35vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    padding:7%;
+    margin:auto; 
+    border-radius:20px;
+    box-shadow: 5px 5px 15px 5px #0000006e;
+}
+legend,label,input{
+    color:#fff;
+}
+label{
+    margin:6% 0;
+}
+input,#name,#envoyer{
+    border-radius:20px;
+    border:none;
+}
+#name{
+    color:#000;
+    padding:2%;
+}
+input{
+    height:20px;
+}
+#image{
+    background:linear-gradient(30deg, rgba(255,44,223,1) 18%, rgba(0,20,255,1) 100%);
+}
+#envoyer{
+    height:15%;
+    width:30%;
+    margin:auto;
+    background:linear-gradient(30deg, rgba(255,44,223,1) 18%, rgba(0,20,255,1) 100%);
+}
+#delete{
+    color:#ff2cdf;
+}
+
+/*TABLETTE*/
+@media screen and (min-width:480px){
+    fieldset{
+        padding:5%;
+        height:45vh
+    }
+    label{
+        margin:3% 0;
+    }
+}
+
+/*DESKSTOP*/
+@media screen and (min-width:768px){
+    fieldset{
+        width:55vw;
+        height:50vh;
+        padding:3%;
+    }
+    #name{
+        height:20px;
+        padding:1%;
+    }
+    #envoyer{
+        cursor:pointer;
+    }
+    #envoyer:hover{
+        opacity:80%;
+    }
+}
